@@ -6,8 +6,8 @@ Hovever if we can take the different components of a program and break them up i
 They can each handle a particular task.<br>
 For example, <br>
 The program `my_app.js` can be broken into 2 additional components. <br>
-1^st^ module `database_logic.js` which contains code to store and retrieve data from a database. <br>
-2^nd^ module `date_formatting.js` which contains functions to convert date values from one format to another. <br>
+1<sup>st</sup> module `database_logic.js` which contains code to store and retrieve data from a database. <br>
+2<sup>nd</sup> module `date_formatting.js` which contains functions to convert date values from one format to another. <br>
 This shows modules requires some management. <br>
 
 # Implementing Modules in JAVASCRIPT
