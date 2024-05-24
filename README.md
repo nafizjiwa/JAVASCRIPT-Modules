@@ -56,7 +56,8 @@ Or you can assign module.exports to an object of the exported values:
       functionToExportB
     };
 
-    /* converters.js */
+######/* converters.js */
+
     function celsiusToFahrenheit(celsius) {
       return celsius + 1;
     }
@@ -75,11 +76,16 @@ Lets examine the global module object which has an exports property<br>
         //   path: "...",
         //   exports: {}, ...
         // }
+        
 To use the imported items use another built-in Node.js feature: `the require() function`<br>
-The require() function accepts a string as an argument. That string provides the file path to the module you would like to import.<br>
+The require() function accepts a string as an argument. The file path to the module you would like to import.<br>
 
-        const converters = require('./converters.js');<br>
-The entire module.exports object is returned and stored in the variable converters.<br>
+
+        const declaredVariable = require('string');
+        EX. const myModule = require('path/to/myModule.js');
+            const converters = require('./converters.js');     <---- importing js file from above 
+        
+The entire module.exports object is returned and stored in the variable declaredVariable.<br>
 
 Modules export files which may contain a large number of functions but only one or two of them are needed.<br>
 SOLUTION: 
