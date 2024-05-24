@@ -19,3 +19,13 @@ The SYNTAX we us depends on your RUNTIME ENVIRONMENT (RE) your code is excecuted
 
 How to use the Node.js module.exports object to export code from a file - meaning its functions and/or data can be used by other files/modules.<br>
 How to use the Node.js require() function to import functions and/or data from another module.<br>
+
+Every JavaScript file that runs in a Node environment is treated as a distinct module<br>
+The functions and data defined within each module can be used by any other module, as long as those resources are properly exported and imported.<br>
+When a program is executed in the Node environment, process.argv is an array holding the arguments provided.<br>
+Creating a module that exports a function which is used by many other modules would solve the problem of having to write the same code in each of the other files.<br>
+
+##### module.exports
+
+
+
