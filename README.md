@@ -60,5 +60,15 @@ Lets examine the global module object which has an exports property<br>
         //   exports: {}, ...
         // }
 To use the imported items use another built-in Node.js feature: `the require() function`<br>
+The require() function accepts a string as an argument. That string provides the file path to the module you would like to import.<br>
+
+        const converters = require('./converters.js');<br>
+The entire module.exports object is returned and stored in the variable converters.<br>
+
+Modules export files which may contain a large number of functions but only one or two of them are needed.<br>
+SOLUTION: 
+    Use object destructuring to extract only the needed functions.<br>
+    
+        const { needed function to import } = require('./file_name.js');
 
 
