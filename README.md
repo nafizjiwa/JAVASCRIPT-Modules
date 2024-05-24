@@ -33,8 +33,8 @@ Creating a module to export export solves the problem of having to write the sam
     -> Ultimately storing a function or value in the object allows us to retrieve it.
     
 2 ways to export a function or a file from a module:
-SYNTAX: module.exports = literal | function | object
-        module.exports.variable = literal | function | object
+`SYNTAX: module.exports = literal | function | object` <br>
+        `module.exports.variable = literal | function | object`
         
     module.exports.functionName = declared functionName;
     moduel.exports.newFunctionName = new function expression;
