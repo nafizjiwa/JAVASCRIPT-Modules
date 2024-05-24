@@ -32,13 +32,13 @@ Creating a module to export export solves the problem of having to write the sam
         -> How? Add them as properties to the built-in module.exports object.
     -> Ultimately storing a function or value in the object allows us to retrieve it.
     
-2 ways to export a function or a file from a module:
+2 ways to export a function or a file from a module:<br>
 `SYNTAX: module.exports = literal | function | object` <br>
         `module.exports.variable = literal | function | object`
         
     module.exports.functionName = declared functionName;
     moduel.exports.newFunctionName = new function expression;
-
+<br>
     /* converters.js */
     function celsiusToFahrenheit(celsius) {
       return celsius + 1;
