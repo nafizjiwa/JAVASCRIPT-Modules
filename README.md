@@ -20,12 +20,44 @@ The SYNTAX we us depends on your RUNTIME ENVIRONMENT (RE) your code is excecuted
 How to use the Node.js module.exports object to export code from a file - meaning its functions and/or data can be used by other files/modules.<br>
 How to use the Node.js require() function to import functions and/or data from another module.<br>
 
-Every JavaScript file that runs in a Node environment is treated as a distinct module<br>
-The functions and data defined within each module can be used by any other module, as long as those resources are properly exported and imported.<br>
+Every JavaScript file that runs in a Node environment is treated as a distinct module that exports values and funciton to be used by other modules.<br>
+These resources are must be exported and imported.<br>
 When a program is executed in the Node environment, process.argv is an array holding the arguments provided.<br>
-Creating a module that exports a function which is used by many other modules would solve the problem of having to write the same code in each of the other files.<br>
+Creating a module to export export solves the problem of having to write the same code in each of the other files.<br>
 
-##### module.exports
+##### To Create a Module.exports
+    -> Create a file
+    -> Declare the function to use
+    -> Make function available to other files
+        -> How? Add them as properties to the built-in module.exports object.
+    -> Ultimately storing a function or value in the object allows us to retrieve it.
+    
+2 ways to export a function or a file from a module:
+SYNTAX: module.exports = literal | function | object
+        module.exports.variable = literal | function | object
+        
+    module.exports.functionName = declared functionName;
+    moduel.exports.newFunctionName = new function expression;
 
+    /* converters.js */
+    function celsiusToFahrenheit(celsius) {
+      return celsius + 1;
+    }
+    module.exports.celsiusToFahrenheit = celsiusToFahrenheit;
+    module.exports.fahrenheitToCelsius = function(fahrenheit) {
+      return (fahrenheit - 32) * (5/9);
+    };
+
+module.exports is an object that is built-in to the Node.js runtime environment. <br>
+Other files can import this object, and make use of functions or value.<br> 
+Lets examine the global module object which has an exports property<br>
+
+        console.log(module)
+        // {
+        //   id: ".",
+        //   path: "...",
+        //   exports: {}, ...
+        // }
+To use the imported items use another built-in Node.js feature: `the require() function`<br>
 
 
