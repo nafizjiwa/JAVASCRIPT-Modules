@@ -33,12 +33,13 @@ Creating a module to export export solves the problem of having to write the sam
     -> Ultimately storing a function or value in the object allows us to retrieve it.
     
 2 ways to export a function or a file from a module:<br>
-`SYNTAX: module.exports = literal | function | object` <br>
+SYNTAX: ` module.exports = literal | function | object` <br>
         `module.exports.variable = literal | function | object`
         
     module.exports.functionName = declared functionName;
     moduel.exports.newFunctionName = new function expression;
 <br>
+
     /* converters.js */
     function celsiusToFahrenheit(celsius) {
       return celsius + 1;
@@ -48,7 +49,7 @@ Creating a module to export export solves the problem of having to write the sam
       return (fahrenheit - 32) * (5/9);
     };
 
-module.exports is an object that is built-in to the Node.js runtime environment. <br>
+`module.exports` is an object that is built-in to the Node.js runtime environment. <br>
 Other files can import this object, and make use of functions or value.<br> 
 Lets examine the global module object which has an exports property<br>
 
