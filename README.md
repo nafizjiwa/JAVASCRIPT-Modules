@@ -94,13 +94,19 @@ SOLUTION:
         const { needed function to import } = require('./file_name.js');
 
 AFTER IMPORTING AN OBJECT FROM ANOTHER MODULE USING REQUIRE().<BR>
-There are a few ways to extract values out of an object. The quickest is with object destructuring syntax:
+There are a few ways to extract values out of an object. 
+The quickest is with object destructuring syntax:<BR>
 
+        const object = require('./fileName.js');
         const { valueA, valueB, valueC } = object;
 
-Alternatively, you can extract each value one at a time:
+You can extract each value one at a time:<BR>
 
             const valueA = object.valueA;
             const valueB = object.valueB;
+
+Use object destructuring to import multiple values from a module:<BR>
+
+    const { valueA, valueB, valueC } = require('/path/to/myModule');
 
 
