@@ -25,7 +25,7 @@ These resources are must be exported and imported.<br>
 When a program is executed in the Node environment, process.argv is an array holding the arguments provided.<br>
 Creating a module to export export solves the problem of having to write the same code in each of the other files.<br>
 
-##### To Create a Module.exports
+#### To Create a Module.exports
     -> Create a file
     -> Declare the function to use
     -> Make function available to other files
@@ -41,7 +41,7 @@ SYNTAX: <br>
     moduel.exports.newFunctionName = new function expression;
 <br>
 
-###### To export a value from a Node module, you can assign a value to the module.exports object like so:<br>
+#### To export a value from a Node module, you can assign a value to the module.exports object like so:<br>
 // Export a named function.<br>
 
     module.exports.functionToExport = functionToExport;
@@ -57,7 +57,7 @@ Or you can assign module.exports to an object of the exported values:
       functionToExportB
     };
 
-######/* converters.js */
+###### /* converters.js */
 
     function celsiusToFahrenheit(celsius) {
       return celsius + 1;
