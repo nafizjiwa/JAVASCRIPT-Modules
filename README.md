@@ -41,33 +41,33 @@ SYNTAX: <br>
     moduel.exports.newFunctionName = new function expression;
 <br>
 
-### To export a value from a Node module, you can assign a value to the module.exports object like so:<br>
+### To export from a Node module, assign a value to the module.exports object like so:<br>
 // Export a named function.<br>
 
     module.exports.functionToExport = functionToExport;
 
-// or... export a function expression.<br>
+// Export a function expression.<br>
     
     module.exports.functionToExport = () => {};
     
-Or you can assign module.exports to an object of the exported values:
+// Export an object of the values assigned module.exports:
 
     module.exports = {
       functionToExportA,
       functionToExportB
     };
 
-#### /* converters.js */
+#### EXAMPLE /* converters.js */
 
     function celsiusToFahrenheit(celsius) {
       return celsius + 1;
     }
-    module.exports.celsiusToFahrenheit = celsiusToFahrenheit;
-    module.exports.fahrenheitToCelsius = function(fahrenheit) {
+    module.exports.celsiusToFahrenheit = celsiusToFahrenheit;                //named function
+    module.exports.fahrenheitToCelsius = function(fahrenheit) {              //function expression
       return (fahrenheit - 32) * (5/9);
     };
 
-`module.exports` is an object that is built-in to the Node.js runtime environment. <br>
+##### `module.exports` is an object that is built-in to the Node.js runtime environment. <br>
 Other files can import this object, and make use of functions or value.<br> 
 Lets examine the global module object which has an exports property<br>
 
