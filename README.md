@@ -94,7 +94,7 @@ SOLUTION:
     
         const { needed function to import } = require('./file_name.js');
 
-AFTER IMPORTING AN OBJECT FROM ANOTHER MODULE USING REQUIRE().<BR>
+#### AFTER IMPORTING AN OBJECT FROM ANOTHER MODULE USING REQUIRE().<BR>
 There are a few ways to extract values out of an object. 
 The quickest is with object destructuring syntax:<BR>
 
