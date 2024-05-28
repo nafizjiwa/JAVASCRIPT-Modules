@@ -103,8 +103,8 @@ The quickest is with object destructuring syntax:<BR>
 
 You can extract each value one at a time:<BR>
 
-            const valueA = object.valueA;
-            const valueB = object.valueB;
+            const valueA = object.valueA(function we are importing from object);
+            const valueB = object.valueB(anther function we are importing from object);
 
 Use object destructuring to import multiple values from a module:<BR>
 
