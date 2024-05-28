@@ -40,6 +40,7 @@ SYNTAX: <br>
     module.exports.functionName = declared functionName;
     moduel.exports.newFunctionName = new function expression;
 <br>
+
 ###### To export a value from a Node module, you can assign a value to the module.exports object like so:<br>
 // Export a named function.<br>
 
