@@ -164,7 +164,7 @@ If imported resources share names. ----> Use ES6 syntax ***as*** keyword to rena
 
 The ***as*** keyword allows the use of a new identifier `newlyNamedResource` <br>
 
-#### Default Exports and Imports
+## Default Exports and Imports
 Export a single value to represent the entire module called the default export. <br>
 Export an object representing the module<br>
 
@@ -177,13 +177,13 @@ Export an object representing the module<br>
     export default resources;
 <br>
 
-#### Importing default values
+## Importing default values
 
     import importedResources from '`javascript-file-using-exported-functions.js`';
 Shorthand for:<br>
 
     import { default as importedResources } from 'module.js
-The identifier importedResources can be chosen as see fit. <br>
+The identifier importedResources is a chosen. <br>
 
 ![image](https://github.com/nafizjiwa/JAVASCRIPT-Modules/assets/56348190/15ad47c9-99a0-4843-8f8f-b64f697947af)
 
