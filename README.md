@@ -5,15 +5,13 @@ PATH DESCRIPTION
     `../`---> indicates that the file being referenced is in the same folder as the parent folder (one folder above)
 
 ###### In JavaScript, programs are written within a `my_app.js` file. <br>
-This program may have different components which have different functions evaluating different things. <br>
-Hovever if we can take the different components of a program and break them up into separate modules. <br>
-They can each handle a particular task.<br>
+These programs have components and functions evaluating different tasks. Separating these components into modules allows them to handle the different task separately.<br>
+                            `So, modules are files that export code.`
 For example, <br>
-The program `my_app.js` can be broken into 2 additional components. <br>
+`my_app.js` can be broken into 2 components/modules. <br>
 
-    FIRST module =====> `database_logic.js` which contains code to store and retrieve data from a database.
-    SECOND module ======> `date_formatting.js` which contains functions to convert date values from one format to another.
-This shows modules requires some management. <br>
+        1st module =====> `database_logic.js` --------> code to store and retrieve data from a database.
+        2nd module ======> `date_formatting.js` -----------> function code to convert values from one format to another.
 
 # Implementing Modules in JAVASCRIPT
 The SYNTAX we us depends on your RUNTIME ENVIRONMENT (RE) your code is excecuted in.<br>
@@ -22,13 +20,15 @@ The SYNTAX we us depends on your RUNTIME ENVIRONMENT (RE) your code is excecuted
     2. Browser (RE) -  ES6 import/export syntax.
 
 # Implementing Modules in Node.js
-How to use the Node.js module.exports object to export code from a file - meaning its functions and/or data can be used by other files/modules.<br>
-How to use the Node.js require() function to import functions and/or data from another module.<br>
 
-Every JavaScript file that runs in a Node environment is treated as a distinct module that exports values and funciton to be used by other modules.<br>
-These resources are must be exported and imported.<br>
-When a program is executed in the Node environment, process.argv is an array holding the arguments provided.<br>
-Creating a module to export export solves the problem of having to write the same code in each of the other files.<br>
+    To export code (files/modules to be used elsewhere) -----> `module.exports` object.
+    To import code (functions or data from another modules) -----> `require()` imports. 
+
+Every JavaScript file that runs in a Node environment is treated as a module that exports values and functions used by other modules, So must be exported and imported<br>
+<br>
+`process.argv` is an array which holds arguments when a program is executed Node.<br>
+
+    Creating a module solves having to write repeated code in different files.
 
 ### To Create a Module.exports
     -> Create a file
@@ -187,6 +187,9 @@ Shorthand for:<br>
 
     import { default as importedResources } from 'module.js
 The identifier importedResources can be chosen as see fit. <br>
+
+![image](https://github.com/nafizjiwa/JAVASCRIPT-Modules/assets/56348190/15ad47c9-99a0-4843-8f8f-b64f697947af)
+
 
 
     
