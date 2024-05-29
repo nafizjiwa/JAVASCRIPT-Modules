@@ -1,4 +1,4 @@
-# Javascript-Modules
+# JAVASCRIPT MODULES
 PATH DESCRIPTION
 
     `./ `---> indicates that the file being referenced is in the same folder as the file it is being imported into 
@@ -13,7 +13,7 @@ For example, <br>
         1st module =====> `database_logic.js` --------> code to store and retrieve data from a database.
         2nd module ======> `date_formatting.js` -----------> function code to convert values from one format to another.
 
-# JAVASCRIPT MODULES
+# MODULE SYNTAX
 The SYNTAX we use depends on your RUNTIME ENVIRONMENT (RE) your code is excecuted in.<br>
 
     1. Node.js (RE) -  module.exports and require() syntax.
