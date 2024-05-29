@@ -1,5 +1,6 @@
 # Javascript-Modules
 PATH DESCRIPTION
+
     ./ ---> indicates that the file being reference is in the same folder as the file it is imported to 
     ../ ---> indicates that the file being reference is in the same folder as the parent folder (one folder above)
 
