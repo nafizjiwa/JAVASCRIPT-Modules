@@ -158,6 +158,36 @@ The modules/ folder is in the same folder as the parent folder<br>
 
     <script `type="module"` src="./javascript-fileName.js"> </script>
 
+#### Renaming Imports to Avoid Naming Collisions
+When importing resources that share names with an existing value or another imported resource.<br> 
+ES6 syntax for renaming imported resources is adding keyword as:<br>
+
+        import { exportedResource as newlyNamedResource } from '/path/to/module'
+
+The imported function can now be used with the `new identifier newlyNamedResource` <br>
+
+#### Default Exports and Imports
+Export a single value to represent the entire module called the default export. <br>
+Export an object representing the module
+    const resources = { 
+          namedFunctionOne,
+          namedFunctionTwo
+        }
+    export { resources as default }; 
+##### OR
+    export default resources;
+<br>
+#### Importing default values
+
+    import importedResources from '`javascript-file-using-exported-functions.js`';
+Shorthand for:<br>
+
+    import { default as importedResources } from 'module.js
+The identifier importedResources can be chosen as see fit. <br>
+
+
+    
+
 
 
 
