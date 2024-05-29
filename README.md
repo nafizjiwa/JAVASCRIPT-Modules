@@ -153,7 +153,8 @@ The syntax suggests the listed values (and their functionality) are named export
 
 **** Here the modules/ folder is in the same folder as the parent folder ***** <br>
 
-###### 2nd Updating the <script></script> with an attribute type equal to 'module' <br>
+###### 2nd Updating the <script></script> with an attribute of type = 'module' <br>
+We must specify that the javascript file is using modules in its script by adding an attribute `type`
 
     <script `type="module"` src="./javascript-fileName.js"> </script>
 
@@ -184,9 +185,32 @@ Shorthand for:<br>
 
     import { default as importedResources } from 'module.js
 The identifier importedResources is a chosen. <br>
+<br>
+<br>
+<br>
+<br>
+To export multiple values using named export syntax, you may write:
 
+    export { valueA, valueB, valueC };
+To export a default value, you may write:
+
+    export default valueD;
+    getCompanies();
+    const roles = getRoles();
+We must specify that main.js file is using modules.
+Every script that uses modules must have a type="module" attribute, like so:
+
+<script type="module" src="myModule.js">
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 ![image](https://github.com/nafizjiwa/JAVASCRIPT-Modules/assets/56348190/15ad47c9-99a0-4843-8f8f-b64f697947af)
-
 
 
     
