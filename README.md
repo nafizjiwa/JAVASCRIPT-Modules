@@ -1,8 +1,8 @@
 # Javascript-Modules
 PATH DESCRIPTION
 
-    `./ `---> indicates that the file being reference is in the same folder as the file it is imported to 
-    `../`---> indicates that the file being reference is in the same folder as the parent folder (one folder above)
+    `./ `---> indicates that the file being referenced is in the same folder as the file it is being imported into 
+    `../`---> indicates that the file being referenced is in the same folder as the parent folder (one folder above)
 
 ###### In JavaScript, programs are written within a `my_app.js` file. <br>
 This program may have different components which have different functions evaluating different things. <br>
@@ -118,20 +118,26 @@ Use object destructuring to import multiple values from a module:<BR>
 ### Implementing Modules in the Browser
 
 ## ES6 Named Export Syntax
-Basics of exporting and importing using the ES6 export and import syntax!
-the functions you wish to reuse can be exported using the named export syntax below:<br>
+Basics of exporting and importing using the ES6 export and import syntax!<br>
+Export functions you wish to reuse using the named export syntax:<br>
 
-`export { resourceToExportA, resourceToExportB, ...}`<br>
-the name of each exported resource is listed between curly braces and separated by commas.<br>
-/* javascript-functions.js */<br>
-const namedFunctionOne = (variable) => {//function logic here omitted} <br>
-const namedFunctionTwo = (variable) => {//function logic here omitted}<br>
-The two functions are exported using the ES6 export statement.<br>
-export { namedFunctionOne, namedFunctionTwo };<br>
-These exported functions are now available to be imported and used by other files!<br>
+    export { resourceToExportA, resourceToExportB, ...}
+The name of each exported resource or funciton is listed between curly braces and separated by commas.<br>
+<br>
+#### Example /* javascript-functions.js */<br>
+
+    const namedFunctionOne = (variable) => {
+                    //function logic here omitted
+                    } 
+    const namedFunctionTwo = (variable) => {
+                    //function logic here omitted
+                    }
+    export { namedFunctionOne, namedFunctionTwo };
+These 2 functions are exported using the ES6 export statement.<br>
+They are now available to be imported and used by other files/mudules!<br>
 
 ## ES6 Import Syntax
-The ES6 syntax for importing named resources from modules is similar to the export syntax:<br>
+Importing named resources is similar to the export syntax:<br>
 
      import { exportedResourceA, exportedResourceB } from '/path/to/javascript-functions.js';
 Let’s update the secret-messages program such that it now imports functionality from dom-functions.js. Doing so requires two important steps.<br>
