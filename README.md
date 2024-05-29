@@ -14,7 +14,7 @@ For example, <br>
         2nd module ======> `date_formatting.js` -----------> function code to convert values from one format to another.
 
 # JAVASCRIPT MODULES
-The SYNTAX we us depends on your RUNTIME ENVIRONMENT (RE) your code is excecuted in.<br>
+The SYNTAX we use depends on your RUNTIME ENVIRONMENT (RE) your code is excecuted in.<br>
 
     1. Node.js (RE) -  module.exports and require() syntax.
     2. Browser (RE) -  ES6 import/export syntax.
