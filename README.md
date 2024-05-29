@@ -136,8 +136,7 @@ The name of each exported resource or funciton is listed between curly braces an
                     //function logic here omitted
                     }
     export { namedFunctionOne, namedFunctionTwo };
-These 2 functions are exported using the ES6 export statement.<br>
-They are now available to be imported and used by other files/mudules!<br>
+These 2 functions are exported using the ES6 export statement. They can be imported and used by other files/mudules!<br>
 
 ## ES6 Import Syntax
 Importing named resources is similar to the export syntax:<br>
