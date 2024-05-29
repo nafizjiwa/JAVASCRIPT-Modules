@@ -210,6 +210,7 @@ Every script that uses modules must have a type="module" attribute, like so:
 <br>
 <br>
 <br>
+    
 ![image](https://github.com/nafizjiwa/JAVASCRIPT-Modules/assets/56348190/15ad47c9-99a0-4843-8f8f-b64f697947af)
 
 
