@@ -157,13 +157,12 @@ The syntax suggests the listed values (and their functionality) are named export
 
     <script `type="module"` src="./javascript-fileName.js"> </script>
 
-### Renaming Imports to Avoid Naming Collisions
-When importing resources that share names with an existing value or another imported resource.<br> 
-ES6 syntax for renaming imported resources is adding keyword as:<br>
+### Renaming Imports using ***AS*** keyword (avoids naming collisions)
+If imported resources share names. ----> Use ES6 syntax ***as*** keyword to rename these resources:<br>
 
         import { exportedResource as newlyNamedResource } from '/path/to/module'
 
-The imported function can now be used with the `new identifier newlyNamedResource` <br>
+The ***as*** keyword allows the use of a new identifier `newlyNamedResource` <br>
 
 #### Default Exports and Imports
 Export a single value to represent the entire module called the default export. <br>
