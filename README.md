@@ -1,4 +1,7 @@
 # Javascript-Modules
+PATH DESCRIPTION
+    ./ ---> indicates that the file being reference is in the same folder as the file it is imported to 
+    ../ ---> indicates that the file being reference is in the same folder as the parent folder (one folder above)
 
 ###### In JavaScript, programs are written within a `my_app.js` file. <br>
 This program may have different components which have different functions evaluating different things. <br>
@@ -17,6 +20,7 @@ The SYNTAX we us depends on your RUNTIME ENVIRONMENT (RE) your code is excecuted
     1. Node.js (RE) -  module.exports and require() syntax.
     2. Browser (RE) -  ES6 import/export syntax.
 
+## Implementing Modules in Node.js
 How to use the Node.js module.exports object to export code from a file - meaning its functions and/or data can be used by other files/modules.<br>
 How to use the Node.js require() function to import functions and/or data from another module.<br>
 
@@ -111,35 +115,37 @@ Use object destructuring to import multiple values from a module:<BR>
     const { valueA, valueB, valueC } = require('/path/to/myModule');
 
 ### Implementing Modules in the Browser
-./ ---> indicates that the file being reference is in the same folder as the file it is imported to
-../ ---> indicates that the file being reference is in the same folder as the parent folder (one folder above)
 
 ## ES6 Named Export Syntax
-the functions you wish to reuse can be exported using the named export syntax below:
+Basics of exporting and importing using the ES6 export and import syntax!
+the functions you wish to reuse can be exported using the named export syntax below:<br>
 
-`export { resourceToExportA, resourceToExportB, ...}`
-the name of each exported resource is listed between curly braces and separated by commas.
-/* javascript-functions.js */
-const namedFunctionOne = (variable) => {//function logic here omitted} 
-const namedFunctionTwo = (variable) => {//function logic here omitted}
-The two functions are exported using the ES6 export statement.
-export { namedFunctionOne, namedFunctionTwo };
-These exported functions are now available to be imported and used by other files!
+`export { resourceToExportA, resourceToExportB, ...}`<br>
+the name of each exported resource is listed between curly braces and separated by commas.<br>
+/* javascript-functions.js */<br>
+const namedFunctionOne = (variable) => {//function logic here omitted} <br>
+const namedFunctionTwo = (variable) => {//function logic here omitted}<br>
+The two functions are exported using the ES6 export statement.<br>
+export { namedFunctionOne, namedFunctionTwo };<br>
+These exported functions are now available to be imported and used by other files!<br>
 
 ## ES6 Import Syntax
-The ES6 syntax for importing named resources from modules is similar to the export syntax:
+The ES6 syntax for importing named resources from modules is similar to the export syntax:<br>
 
-`import { exportedResourceA, exportedResourceB } from '/path/to/javascript-functions.js';`
-Let’s update the secret-messages program such that it now imports functionality from dom-functions.js. Doing so requires two important steps.
-First, update /* javascript-file-using-exported-funcitons.js */:
-/* javascript-file-using-exported-funcitons.js */
-import { namedFunctionOne, namedFunctionTwo } from '../modules/dom-functions.js';
+     import { exportedResourceA, exportedResourceB } from '/path/to/javascript-functions.js';
+Let’s update the secret-messages program such that it now imports functionality from dom-functions.js. Doing so requires two important steps.<br>
+First, update /* javascript-file-using-exported-funcitons.js */:<br>
+/* javascript-file-using-exported-funcitons.js */<br>
+
+    import { namedFunctionOne, namedFunctionTwo } from '../modules/dom-functions.js';<br>
 
 
-In secret-messages.js, the functions toggleHiddenElement() and changeToFunkyColor() are imported from the module ../modules/dom-functions.js.
-The ../ indicates that the modules/ folder is in the same folder as the parent folder, secret-messages/.
+In javascript-file-using-exported-functions.js, the functions namedFunctionOne() and namedFunctionTwo() are imported from the module ../modules/exported-file-with-functions.js.<br>
+The ../ indicates that the modules/ folder is in the same folder as the parent folder, secret-messages/.<br>
 
-<script type="module" src="./secret-messages.js"> </script>
+    <script type="module" src="./secret-messages.js"> </script>
+
+the addition of the attribute type='module' to the <script>
 
 
 
