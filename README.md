@@ -207,11 +207,19 @@ To export a default value, you may write:
     export default valueD;
     getCompanies();
     const roles = getRoles();
-We must specify that main.js file is using modules.
-Every script that uses modules must have a type="module" attribute, like so:
+// Named import syntax:
+import { valueA, valueB, valueC } from 'path/to/module.js';
 
-<script type="module" src="myModule.js">
+// Default import syntax:
+import moduleResources from '/path/to/module.js';
 
+You can export multiple values using named export syntax like so:
+
+export { valueA, valueB, valueC };
+
+Or you can put the keyword export in front of the value you want to export:
+
+export const foo = () => {};
 
 
 
