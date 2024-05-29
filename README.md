@@ -124,7 +124,8 @@ Export functions you wish to reuse using the named export syntax:<br>
     export { resourceToExportA, resourceToExportB, ...}
 The name of each exported resource or funciton is listed between curly braces and separated by commas.<br>
 <br>
-#### Example /* javascript-functions.js */<br>
+#### Example 
+`/* javascript-functions.js */`<br>
 
     const namedFunctionOne = (variable) => {
                     //function logic here omitted
@@ -140,10 +141,11 @@ They are now available to be imported and used by other files/mudules!<br>
 Importing named resources is similar to the export syntax:<br>
 
      import { exportedResourceA, exportedResourceB } from '/path/to/javascript-functions.js';
-Let’s update the secret-messages program such that it now imports functionality from dom-functions.js. 
-This requires 2 important steps.<br>
-1<sup>st</sup> Update /* javascript-file-using-exported-funcitons.js */:<br>
-/* javascript-file-using-exported-funcitons.js */<br>
+     
+Use the import to update the module requiring the use of the exported functions so it imports functionality from javascript-functions.js. <br>
+#### 2 important steps.<br>
+1<sup>st</sup> Update /* javascript-file-using-the-exported-functions.js */:<br>
+/* javascript-file-using-the-exported-functions.js */<br>
 
     import { namedFunctionOne, namedFunctionTwo } from '../modules/dom-functions.js';<br>
 
@@ -151,7 +153,7 @@ This requires 2 important steps.<br>
 In `javascript-file-using-exported-functions.js` the functions namedFunctionOne() and namedFunctionTwo() are imported from the module ../modules/exported-file-with-functions.js.<br>
 The modules/ folder is in the same folder as the parent folder<br>
 
-2<sup>nd</sup> The addition of the attribute type equal to 'module' in the <script></script><br>
+2<sup>nd</sup> The addition to the <script></script> the attribute type which is equal to 'module' <br>
 
     <script `type="module"` src="./javascript-fileName.js"> </script>
 
