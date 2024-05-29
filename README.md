@@ -168,7 +168,8 @@ The imported function can now be used with the `new identifier newlyNamedResourc
 
 #### Default Exports and Imports
 Export a single value to represent the entire module called the default export. <br>
-Export an object representing the module
+Export an object representing the module<br>
+
     const resources = { 
           namedFunctionOne,
           namedFunctionTwo
@@ -177,6 +178,7 @@ Export an object representing the module
 ##### OR
     export default resources;
 <br>
+
 #### Importing default values
 
     import importedResources from '`javascript-file-using-exported-functions.js`';
