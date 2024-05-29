@@ -1,8 +1,8 @@
 # Javascript-Modules
 PATH DESCRIPTION
 
-    ./ ---> indicates that the file being reference is in the same folder as the file it is imported to 
-    ../ ---> indicates that the file being reference is in the same folder as the parent folder (one folder above)
+    `./ `---> indicates that the file being reference is in the same folder as the file it is imported to 
+    `../`---> indicates that the file being reference is in the same folder as the parent folder (one folder above)
 
 ###### In JavaScript, programs are written within a `my_app.js` file. <br>
 This program may have different components which have different functions evaluating different things. <br>
