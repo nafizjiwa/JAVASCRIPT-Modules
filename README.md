@@ -110,4 +110,36 @@ Use object destructuring to import multiple values from a module:<BR>
 
     const { valueA, valueB, valueC } = require('/path/to/myModule');
 
+### Implementing Modules in the Browser
+./ ---> indicates that the file being reference is in the same folder as the file it is imported to
+../ ---> indicates that the file being reference is in the same folder as the parent folder (one folder above)
+
+## ES6 Named Export Syntax
+the functions you wish to reuse can be exported using the named export syntax below:
+
+`export { resourceToExportA, resourceToExportB, ...}`
+the name of each exported resource is listed between curly braces and separated by commas.
+/* javascript-functions.js */
+const namedFunctionOne = (variable) => {//function logic here omitted} 
+const namedFunctionTwo = (variable) => {//function logic here omitted}
+The two functions are exported using the ES6 export statement.
+export { namedFunctionOne, namedFunctionTwo };
+These exported functions are now available to be imported and used by other files!
+
+## ES6 Import Syntax
+The ES6 syntax for importing named resources from modules is similar to the export syntax:
+
+`import { exportedResourceA, exportedResourceB } from '/path/to/javascript-functions.js';`
+Let’s update the secret-messages program such that it now imports functionality from dom-functions.js. Doing so requires two important steps.
+First, update /* javascript-file-using-exported-funcitons.js */:
+/* javascript-file-using-exported-funcitons.js */
+import { namedFunctionOne, namedFunctionTwo } from '../modules/dom-functions.js';
+
+
+In secret-messages.js, the functions toggleHiddenElement() and changeToFunkyColor() are imported from the module ../modules/dom-functions.js.
+The ../ indicates that the modules/ folder is in the same folder as the parent folder, secret-messages/.
+
+<script type="module" src="./secret-messages.js"> </script>
+
+
 
