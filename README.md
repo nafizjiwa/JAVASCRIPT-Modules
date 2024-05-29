@@ -140,19 +140,22 @@ They are now available to be imported and used by other files/mudules!<br>
 Importing named resources is similar to the export syntax:<br>
 
      import { exportedResourceA, exportedResourceB } from '/path/to/javascript-functions.js';
-Let’s update the secret-messages program such that it now imports functionality from dom-functions.js. Doing so requires two important steps.<br>
-First, update /* javascript-file-using-exported-funcitons.js */:<br>
+Let’s update the secret-messages program such that it now imports functionality from dom-functions.js. 
+This requires 2 important steps.<br>
+1<sup>st</sup> Update /* javascript-file-using-exported-funcitons.js */:<br>
 /* javascript-file-using-exported-funcitons.js */<br>
 
     import { namedFunctionOne, namedFunctionTwo } from '../modules/dom-functions.js';<br>
 
 
-In javascript-file-using-exported-functions.js, the functions namedFunctionOne() and namedFunctionTwo() are imported from the module ../modules/exported-file-with-functions.js.<br>
-The ../ indicates that the modules/ folder is in the same folder as the parent folder, secret-messages/.<br>
+In `javascript-file-using-exported-functions.js` the functions namedFunctionOne() and namedFunctionTwo() are imported from the module ../modules/exported-file-with-functions.js.<br>
+The modules/ folder is in the same folder as the parent folder<br>
 
-    <script type="module" src="./secret-messages.js"> </script>
+2<sup>nd</sup> The addition of the attribute type equal to 'module' in the <script></script><br>
 
-the addition of the attribute type='module' to the <script>
+    <script `type="module"` src="./javascript-fileName.js"> </script>
+
+
 
 
 
