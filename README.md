@@ -94,7 +94,7 @@ The require() function accepts a string as an argument. The file path to the mod
 The entire module.exports object is returned and stored in the variable declaredVariable.<br>
 
 Modules export files which may contain a large number of functions but only one or two of them are needed.<br>
-SOLUTION: 
+###### SOLUTION: 
     Use object destructuring to extract only the needed functions.<br>
     
         const { needed function to import } = require('./file_name.js');
@@ -141,25 +141,23 @@ These 2 functions or its data are exported using the ES6 export statement. They 
 ## ES6 Import Syntax
 Importing named resources is similar to the export syntax:<br>
 
-     import { exportedResourceA, exportedResourceB } from '/path/to/javascript-functions.js';
+     import { exportedResourceA, exportedResourceB } from './path/to/javascript-functions.js';
      
-Use the import to update the module requiring the use of the exported functions so it imports functionality from javascript-functions.js. <br>
-#### 2 Important Steps.<br>
-###### 1<sup>st</sup> Update /* javascript-file-using-the-exported-functions.js */:<br>
-/* javascript-file-using-the-exported-functions.js */<br>
+The syntax suggests the listed values (and their functionality) are named exports of './path/to/javascript-functions.js'. MUST BE EXPORTED with named export syntax.
 
-    import { namedFunctionOne, namedFunctionTwo } from '../modules/dom-functions.js';<br>
+#### 2 Steps for Importing<br>
+###### 1st Update file /* javascript-file-that-is-using-the-exported-functions.js */ with import syntax:<br>
+/* javascript-file-that-is-using-the-exported-functions.js */<br>
 
+    import { namedFunctionOne, namedFunctionTwo } from '../modules/exported-file-with-functions-being-used.js';<br>
 
-In `javascript-file-using-exported-functions.js`<br>
-Import the functions namedFunctionOne() and namedFunctionTwo() from the module `../modules/exported-file-with-functions.js.` <br>
-The modules/ folder is in the same folder as the parent folder<br>
+**** Here the modules/ folder is in the same folder as the parent folder ***** <br>
 
-###### 2<sup>nd</sup> The addition to the <script></script> the attribute type which is equal to 'module' <br>
+###### 2nd Updating the <script></script> with an attribute type equal to 'module' <br>
 
     <script `type="module"` src="./javascript-fileName.js"> </script>
 
-#### Renaming Imports to Avoid Naming Collisions
+### Renaming Imports to Avoid Naming Collisions
 When importing resources that share names with an existing value or another imported resource.<br> 
 ES6 syntax for renaming imported resources is adding keyword as:<br>
 
