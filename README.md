@@ -21,7 +21,7 @@ The SYNTAX we us depends on your RUNTIME ENVIRONMENT (RE) your code is excecuted
     1. Node.js (RE) -  module.exports and require() syntax.
     2. Browser (RE) -  ES6 import/export syntax.
 
-## Implementing Modules in Node.js
+# Implementing Modules in Node.js
 How to use the Node.js module.exports object to export code from a file - meaning its functions and/or data can be used by other files/modules.<br>
 How to use the Node.js require() function to import functions and/or data from another module.<br>
 
@@ -115,7 +115,7 @@ Use object destructuring to import multiple values from a module:<BR>
 
     const { valueA, valueB, valueC } = require('/path/to/myModule');
 
-### Implementing Modules in the Browser
+# Implementing Modules in the Browser
 
 ## ES6 Named Export Syntax
 Basics of exporting and importing using the ES6 export and import syntax!<br>
