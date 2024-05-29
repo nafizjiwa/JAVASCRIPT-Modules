@@ -143,17 +143,18 @@ Importing named resources is similar to the export syntax:<br>
      import { exportedResourceA, exportedResourceB } from '/path/to/javascript-functions.js';
      
 Use the import to update the module requiring the use of the exported functions so it imports functionality from javascript-functions.js. <br>
-#### 2 important steps.<br>
-1<sup>st</sup> Update /* javascript-file-using-the-exported-functions.js */:<br>
+#### 2 Important Steps.<br>
+###### 1<sup>st</sup> Update /* javascript-file-using-the-exported-functions.js */:<br>
 /* javascript-file-using-the-exported-functions.js */<br>
 
     import { namedFunctionOne, namedFunctionTwo } from '../modules/dom-functions.js';<br>
 
 
-In `javascript-file-using-exported-functions.js` the functions namedFunctionOne() and namedFunctionTwo() are imported from the module ../modules/exported-file-with-functions.js.<br>
+In `javascript-file-using-exported-functions.js`<br>
+Import the functions namedFunctionOne() and namedFunctionTwo() from the module `../modules/exported-file-with-functions.js.` <br>
 The modules/ folder is in the same folder as the parent folder<br>
 
-2<sup>nd</sup> The addition to the <script></script> the attribute type which is equal to 'module' <br>
+###### 2<sup>nd</sup> The addition to the <script></script> the attribute type which is equal to 'module' <br>
 
     <script `type="module"` src="./javascript-fileName.js"> </script>
 
