@@ -118,8 +118,10 @@ Use object destructuring to import multiple values from a module:<BR>
 # Implementing Modules in the Browser
 
 ## ES6 Named Export Syntax
-Basics of exporting and importing using the ES6 export and import syntax!<br>
-Export functions you wish to reuse using the named export syntax:<br>
+Basics of exporting and importing using the ES6 export/import syntax!<br>
+Named exports — each item (be it a function, const, etc.) has been referred to by its name upon export, and that name has been used to refer to it on import as well.
+#### Syntax Example 
+2 functions you wish to reuse using the named export syntax:<br>
 
     export { resourceToExportA, resourceToExportB, ...}
 The name of each exported resource or funciton is listed between curly braces and separated by commas.<br>
