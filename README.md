@@ -213,7 +213,8 @@ Every script that uses modules must have a type="module" attribute, like so:
 <br>
 <br>
 
-![cheatsheet](https://github.com/nafizjiwa/JAVASCRIPT-Modules/assets/56348190/c12cbd55-7f84-418e-971f-26ff3fdd0e83)
+![image](https://github.com/nafizjiwa/JAVASCRIPT-Modules/assets/56348190/18854502-5eae-47a1-9d9b-7ba769fa7799)
+
 
 
 
