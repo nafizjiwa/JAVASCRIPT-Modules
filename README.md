@@ -185,8 +185,16 @@ Shorthand for:<br>
 
     import { default as importedResources } from 'module.js
 The identifier importedResources is a chosen. <br>
+<br>
+<br>
+<br>
+
 ![image](https://github.com/nafizjiwa/JAVASCRIPT-Modules/assets/56348190/6c86a6f8-bff9-4ce8-ac4e-13a70a8b5daa)
 
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -204,16 +212,8 @@ Every script that uses modules must have a type="module" attribute, like so:
 
 <script type="module" src="myModule.js">
 
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 
-![image](https://github.com/nafizjiwa/JAVASCRIPT-Modules/assets/56348190/18854502-5eae-47a1-9d9b-7ba769fa7799)
+
 
 
 
